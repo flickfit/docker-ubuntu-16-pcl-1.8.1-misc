@@ -24,8 +24,6 @@ RUN \
 RUN \
     wget --no-check-certificate https://sourceforge.net/projects/aruco/files/2.0.19/aruco-2.0.19.zip && \
     unzip aruco-2.0.19.zip && \
-    # git clone https://git.code.sf.net/p/aruco/aruco-git aruco-aruco-git --depth 1 && \
-    # cd aruco-aruco-git && \
     cd aruco-2.0.19 && \
     mkdir build && cd build && \
     cmake -DCMAKE_BUILD_TYPE=Release .. && \
